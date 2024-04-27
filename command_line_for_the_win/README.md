@@ -1,41 +1,22 @@
-Sure, here's a README.md file with instructions on how to use SFTP to transfer screenshots to a sandbox environment and push them to GitHub:
+# Uploadine Screenshots to Remote Server using SFTP
 
-```markdown
-# Uploading Screenshots to Sandbox Environment and Pushing to GitHub
+**Brief Overview of SFTP:**
 
-Follow these steps to upload screenshots to a sandbox environment using SFTP and push them to GitHub:
+SFTP (SSH File Transfer Protocol) is a secure file transfer protocol that enables you to transfer files securely over a network. It uses SSH (Secure Shell) for authentication and encryption, providing a secure way to transfer files between hosts.
 
-1. **Take Screenshots**: Capture screenshots of the completed levels as mentioned in the general requirements.
+**Instructions:**
 
-2. **Open Terminal/Command Prompt**: Open a terminal or command prompt on your local machine.
+Here are step I done to upload screenshots to a remote server using SFTP:
 
-3. **Establish SFTP Connection**: Use the SFTP command-line tool to establish a connection to the sandbox environment. You will need the hostname, username, and password provided for the sandbox environment. For example:
-   
-   ```bash
-   sftp username@hostname
-   ```
+1. **Connect with SFTP**: Use the SFTP command to establish a connection to the remote server and enter the password when prompted.
 
-   Replace `username` with your provided username and `hostname` with the provided hostname.
+2. **Navigate to Directory**: Once connected, navigate to the directory on the remote server where you want to upload the screenshots.
 
-4. **Navigate to Destination Directory**: Once connected, navigate to the directory where you want to upload the screenshots using the `cd` command. For example:
-   
-   ```bash
-   cd /path/to/destination/directory
-   ```
+3. **List Local Files**: Use the `lls` command to list the files and directories on your local machine. Ensure that you are in the correct directory containing the screenshots you want to upload.
 
-5. **Upload Screenshots**: Use the SFTP `put` command to upload the screenshots from your local machine to the sandbox environment. For example, if your screenshots are in the current directory on your local machine:
-   
-   ```bash
-   put screenshot1.png screenshot2.png
-   ```
+4. **Upload Screenshots**: Use the `put` command to upload the screenshots from your local machine to the remote server. Navigate to the directory containing the screenshots on your local machine, then use the `put` command followed by the path to the directory containing the screenshots. Press Enter to upload the screenshots to the remote server.
 
-   Replace `screenshot1.png`, `screenshot2.png`, etc., with the actual filenames of your screenshots.
+5. **Confirmation**: Once the upload is complete, you should see a confirmation message indicating that the files were successfully transferred.
 
-6. **Confirm Transfer**: Confirm that the screenshots have been successfully transferred by checking the sandbox directory using the `ls` command in the SFTP session.
+That's it! You have successfully uploaded screenshots to the remote server using SFTP.
 
-7. **Push Screenshots to GitHub**: Once the screenshots are transferred, you can proceed to push them to GitHub as mentioned in the initial requirements.
-
-8. **Update README.md**: Make sure to include the steps you followed to use the SFTP command-line tool in your project’s README.md file. This will help the reviewers understand how you performed the file transfer using SFTP.
-```
-
-You can copy and paste this content into your README.md file. Feel free to customize it as needed for your project.
