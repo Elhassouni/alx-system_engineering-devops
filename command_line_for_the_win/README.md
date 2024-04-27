@@ -6,7 +6,7 @@ SFTP (SSH File Transfer Protocol) is a secure file transfer protocol that enable
 
 **Instructions:**
 
-Here are step I done to upload screenshots to a remote server using SFTP:
+Here are the steps I done to upload screenshots to a remote server using SFTP:
 
 1. **Connect with SFTP**: Use the SFTP command to establish a connection to the remote server and enter the password when prompted.
 
