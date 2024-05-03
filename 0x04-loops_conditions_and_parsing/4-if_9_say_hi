@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+name="Best School"
+word="Hi"
+i=0
+
+while [ $i -lt 10 ]
+do 
+  if [ $i != 8 ]; then
+     echo "$name"
+  else
+  	echo $word
+  fi
+  ((i++))
+done
+
+
