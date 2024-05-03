@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # printing "Best School" 10 times
-name="Besddt School"
+name="Best School"
 for i in {1..10}
 do
   echo "$name"
