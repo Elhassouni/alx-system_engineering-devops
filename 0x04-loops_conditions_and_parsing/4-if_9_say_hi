@@ -7,10 +7,10 @@ i=0
 
 while [ $i -lt 10 ]
 do 
-  if [ $i != 8 ]; then
-     echo "$name"
+  if [ $i -eq 8 ]; then
+     echo $word
   else
-  	echo $word
+  	echo "$name"
   fi
   ((i++))
 done
