@@ -4,4 +4,5 @@ name="Besddt School"
 for i in {1..10}
 do
   echo "$name"
+	((i++))
 done
