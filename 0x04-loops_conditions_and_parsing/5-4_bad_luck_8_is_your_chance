@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+name="Best School"
+word1="bad luck"
+word2="good luck"
+
+i=1
+four=4
+eight=8
+
+
+while [ $i -le 10 ]
+do 
+  if [ $i == $four ]
+  then
+  	echo "$word1"
+  elif [ $i == $eight ]
+  then
+  	echo "$word2"
+  else
+  	echo "$name"
+  fi
+  ((i++))
+done
