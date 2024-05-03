@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # printing "Best School" 10 times
-name="Best School"
+name="Besddt School"
 for i in {1..10}
 do
-  echo $name
+  echo "$name"
 done
