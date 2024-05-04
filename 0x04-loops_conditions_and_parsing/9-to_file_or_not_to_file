@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Write a Bash script that gives you information about the school file.
 
-file_name="./school"
+file_name="school"
 
 if [ -e $file_name ]; then
 
@@ -9,7 +9,7 @@ if [ -e $file_name ]; then
  
    if [ -s $file_name ]; then
 
-      echo " school file is not empty"
+      echo "school file is not empty"
 
    else
 
