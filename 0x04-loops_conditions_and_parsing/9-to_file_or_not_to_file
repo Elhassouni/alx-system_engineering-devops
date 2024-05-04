@@ -1,10 +1,11 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 # Write a Bash script that gives you information about the school file.
+
 file_name="./school"
 
 if [ -e "$file_name" ]; then
 
-   echo " school file exists"
+   echo "school file exists"
  
    if [ -s "$file_name" ]; then
 
