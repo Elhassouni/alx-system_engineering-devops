@@ -22,8 +22,7 @@ if [ -e $file_name ]; then
       echo "school is a regular file"
 
    else
-
-      echo (nothing)
+      :
 
    fi
 
