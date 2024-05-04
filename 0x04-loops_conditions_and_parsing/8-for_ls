@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Extract the part after the first dash
+
+for file in *
+do
+		name=$( echo "$file" | cut -d"-" -f2 )
+		# Display the modified name
+		echo "$name"
+done
