@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Write a Bash script that catch SIGTERM SIGNAL WITH TRAP
+trap 'echo "I am invincible!!!"' SIGTERM
+var=0
+while [ $var ]
+do
+	echo 'To infinity and beyond'
+	sleep 2
+done
