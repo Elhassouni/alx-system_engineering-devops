@@ -13,4 +13,4 @@ REMOTE_USER="$3"
 SSH_KEY="$4"
 
 # Perform the file transfer using SCP
-scp -i "$SSH_KEY" "$LOCAL_FILE" "$REMOTE_USER@$REMOTE_IP:~/"
+scp -o StrictHostKeyChecking=no -i "$SSH_KEY" "$LOCAL_FILE" "$REMOTE_USER@$REMOTE_IP:~/"
