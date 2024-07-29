@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-
-
 # creating script to tranfer file to remote server
 
 if [ $# -ne 4 ]; then
