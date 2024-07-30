@@ -13,14 +13,9 @@ sudo sed -i 's/listen \[::\]:80 default_server;/listen \[::\]:80;/g' /etc/nginx/
 sudo ufw allow 'Nginx HTTP'
 
 # Create an HTML file containing "Hello World!" in the default web directory
-echo "<html>
-<head>
-  <title>Hello World</title>
-</head>
-<body>
-  Hello World!
-</body>
-</html>" | sudo tee /var/www/html/index.html
+#alternative look bellow this line: for echo "hello world" | sudo tee /var/www/html/index.html 
+#sudo sh -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'
+sudo sh -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'
 
 # Reload Nginx to apply the new configuration
 sudo nginx -s reload
