@@ -7,5 +7,13 @@ sudo apt-get -y install nginx
 # Add the redirect configuratio
 sudo sed -i '/^}$/i \ \n\tlocation \/redirect_me {return 301 https:\/\/https://www.youtube.com/watch?v=41_Scmre73s&list=RD41_Scmre73s&start_radio=1;}' /etc/nginx/sites-available/default
 
-sudo sh -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'                                                                                           
+sudo sh -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'                                                                                          
+# Verify that the redirection is correctly configured
+REDIRECTION_STATUS=$(curl -o /dev/null -s -w "%{http_code}\n" http://localhost/redirect_me)
+
+if [ "$REDIRECTION_STATUS" -eq 301 ]; then
+    echo "301"
+else
+    echo "Redirection failed or status code is not 301."
+fi
 sudo service nginx start                                                    
