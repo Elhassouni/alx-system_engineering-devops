@@ -4,10 +4,8 @@ sudo apt-get -y update
 sudo apt-get -y install nginx                                                                                                                                          
                                                                                                                                                                        
 # Define the Nginx configuration file path                                                                                                                             
-NGINX_CONF="/etc/nginx/sites-available/default"                                                                                                                        
-                                                                                                                                                                       
-# Add the redirect configuration                                                                                                                                       
+# Add the redirect configuratio
 sudo sed -i '/^}$/i \ \n\tlocation \/redirect_me {return 301 https:\/\/https://www.youtube.com/watch?v=41_Scmre73s&list=RD41_Scmre73s&start_radio=1;}' /etc/nginx/sites-available/default
 
-sudo sh -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'                                                                                               
+sudo sh -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'                                                                                           
 sudo service nginx start                                                    
