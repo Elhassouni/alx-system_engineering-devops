@@ -1,0 +1,7 @@
+Host your_server
+    HostName 54.90.43.28  # Replace with your server's IP address
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PreferredAuthentications publickey
+    PasswordAuthentication no
+
