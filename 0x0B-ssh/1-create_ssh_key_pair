@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Create an RSA key pair with specified options
+ssh-keygen -t rsa -b 4096 -f school -N "betty"
+
