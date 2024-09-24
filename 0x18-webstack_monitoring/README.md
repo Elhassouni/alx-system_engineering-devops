@@ -4,10 +4,10 @@
 
 #### Read or watch:
 
-* [What is server monitoring](https://intranet.alxswe.com/rltoken/km_XUDAfXEBoXZQsIWEo5Q)
-* [What is application monitoring](https://intranet.alxswe.com/rltoken/z9jsikINjrsUo2QY5_Xz8g)
+* [What is server monitoring](https://www.sumologic.com/glossary/server-monitoring/)
+* [What is application monitoring](https://en.wikipedia.org/wiki/Application_performance_management)
 * [System monitoring by Google](https://intranet.alxswe.com/rltoken/_8KIbIUNzMgKi_LiGMBWAw)
-* [Nginx logging and monitoring](https://intranet.alxswe.com/rltoken/V3GsrDcMHPdgrizShj4RCg)
+* [Nginx logging and monitoring](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/)
 ## Learning Objectives
 
 ### General
