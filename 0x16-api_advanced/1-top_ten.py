@@ -9,8 +9,7 @@ import requests
 
 def top_ten(subreddit):
     """Prints the titles of the first 10 hot posts for a given subreddit."""
-    base_url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=9"
-    # made limit 9 since index is 0 - 9 gives 10 posts
+    base_url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
     headers = {'User-Agent': 'custom-script/1.0'}
 
     try:
@@ -22,5 +21,5 @@ def top_ten(subreddit):
                 print(post['data']['title'])
         else:
             print(None)
-    except requests.RequestException:
+    except requests.RequestException as e:
         print(None)
